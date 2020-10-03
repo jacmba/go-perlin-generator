@@ -9,8 +9,9 @@ import (
 )
 
 const (
-	defaultWidth  = 512
-	defaultHeight = 512
+	defaultWidth      = 512
+	defaultHeight     = 512
+	defaultResolution = 2.0
 )
 
 func main() {
@@ -19,7 +20,7 @@ func main() {
 	w.SetFixedSize(true)
 	w.Resize(fyne.NewSize(defaultWidth, defaultHeight))
 
-	mImg := img.NewImg(defaultWidth, defaultHeight)
+	mImg := img.NewImg(defaultWidth, defaultHeight, defaultResolution)
 	i := mImg.Generate()
 
 	raster := canvas.NewImageFromImage(i)
