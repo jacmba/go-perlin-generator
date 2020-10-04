@@ -11,7 +11,7 @@ import (
 const (
 	defaultWidth      = 512
 	defaultHeight     = 512
-	defaultResolution = 2.0
+	defaultResolution = 25.0
 )
 
 func main() {
